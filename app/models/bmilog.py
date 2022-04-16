@@ -1,5 +1,5 @@
 from app import db
-from users import User
+from models.users import User
 
 class BMILOG(db.Document):
     meta = {'collection': 'bmilog'}

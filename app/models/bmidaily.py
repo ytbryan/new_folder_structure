@@ -1,5 +1,5 @@
 from app import db
-from users import User
+from models.users import User
 
 # class Bmi_Measurement(db_Document):
 class BMIDAILY(db.Document):

@@ -7,7 +7,9 @@ from app import app, db, login_manager
 # Register Blueprint so we can factor routes
 # from bmi import bmi, get_dict_from_csv, insert_reading_data_into_database
 from bmi import bmi
-from dashboard import dashboard, CHART
+from models.chart import CHART
+
+from dashboard import dashboard
 from controllers.auth import auth
 # from auth import auth
 
@@ -16,8 +18,7 @@ app.register_blueprint(dashboard)
 app.register_blueprint(auth)
 app.register_blueprint(bmi)
 
-from users import User
-from dashboard import CHART
+from models.users import User
 from bmi import BMIDAILY
 import csv
 import io
