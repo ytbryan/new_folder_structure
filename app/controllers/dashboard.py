@@ -9,11 +9,7 @@ import io
 from models.bmidaily import BMIDAILY
 from models.chart import CHART
 
-# from bmi import BMIDAILY
-# from users import User
-
 dashboard = Blueprint('dashboard', __name__)
-
 
 @dashboard.route('/chart2', methods=['GET', 'POST'])
 def chart2():
